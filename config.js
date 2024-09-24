@@ -7,9 +7,9 @@ const DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 module.exports = {
    // Boolean Values (converted from Strings)
    LOGS: toBool(process.env.LOGS) || false,
-   ANTILINK: toBool(process.env.ANTI_LINK) || false,
+   ANTILINK: toBool(process.env.ANTI_LINK) || true,
    HEROKU: toBool(process.env.HEROKU) || false,
-   AUTO_READ: toBool(process.env.AUTO_READ) || false,
+   AUTO_READ: toBool(process.env.AUTO_READ) || true,
    AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || true,
    DELETED_LOG: toBool(process.env.DELETED_LOG) || true,
    STATUS_SAVER: toBool(process.env.STATUS_SAVER) || false,
@@ -18,8 +18,8 @@ module.exports = {
    // String Values
    SESSION_ID: process.env.SESSION_ID || "", // Put your session
    HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : "[.]",
-   BOT_INFO: process.env.BOT_INFO || "Kɢᴛᴇᴄʜ;KᴇʀᴍLɪᴛᴇ⚡️", // YourName;BotName;Image/VideoLink
-   SUDO: process.env.SUDO || "237656520674",
+   BOT_INFO: process.env.BOT_INFO || "Kɢᴛᴇᴄʜ; mikaelson DEATH ⚡️", // YourName;BotName;Image/VideoLink
+   SUDO: process.env.SUDO || "242057954499",
    PRESENCE: process.env.PRESENCE || "available", // "unavailable", "available", "composing", "recording", "paused"
    CAPTION: process.env.CAPTION || "© Kᴇʀᴍ ᴍᴅ",
    TIME_ZONE: process.env.TIME_ZONE || "Africa/Lagos",
